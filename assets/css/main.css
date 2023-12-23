@@ -1,6 +1,16 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
 
+
+@font-face {
+  font-family : 'Orbit';
+  src : url(../webfonts/Orbit-Regular.woff2)
+}
+@font-face {
+  font-family : 'suite';
+  src : url(../webfonts/SUITE-Variable.woff2)
+}
+
 /*
 	Story by HTML5 UP
 	html5up.net | @ajlkn
@@ -204,6 +214,7 @@ input, select, textarea {
 		}
 
 	h1 {
+		font-family: suite;
 		font-size: 3.5rem;
 		line-height: 1.2;
 	}
