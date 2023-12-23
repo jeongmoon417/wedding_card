@@ -6,9 +6,10 @@
 var audio = new Audio('audio/song1.mp3');
 audio.autoplay = true;
 
-//페이지 로드 시 실행할 코드 구현
 $(document).ready(function(){
-	//audio.play();
+	
+	$('#mainImg').sakura();
+	
 	//alert('hi');
 	audio.play();
 });
