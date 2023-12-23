@@ -8,6 +8,7 @@ audio.autoplay = true;
 
 $(document).ready(function(){
 	
+	// 꽃잎 내리는 효과
 	$('#mainImg').sakura();
 	
 	//alert('hi');

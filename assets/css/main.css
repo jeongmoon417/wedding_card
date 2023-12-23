@@ -33,6 +33,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	font-family: suite;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -214,7 +215,6 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-family: suite;
 		font-size: 3.5rem;
 		line-height: 1.2;
 	}
@@ -3593,11 +3593,11 @@ input, select, textarea {
 			@media screen and (orientation: portrait) {
 
 				.banner.style1.fullscreen .content {
-					min-height: 50vh;
+					min-height: 40vh;
 				}
 
 				.banner.style1.fullscreen .image {
-					height: 50vh;
+					height: 60vh;
 				}
 
 			}
@@ -8612,3 +8612,6 @@ input, select, textarea {
 			#wrapper.divided > .invert:first-child {
 				box-shadow: none !important;
 			}
+			
+/* added by jm*/
+
