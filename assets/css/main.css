@@ -8695,3 +8695,12 @@ input, select, textarea {
     }
   }
 }
+
+.myImageIcon {
+	
+    width: 2.5rem;
+    border: 1px dotted #a5a5a5;
+    border-radius: 1em;
+	
+	
+}
