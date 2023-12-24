@@ -13,6 +13,8 @@ $(document).ready(function(){
 	
 	//alert('hi');
 	audio.play();
+	
+	setDDay();
 });
 
 function playBgMusic(){
@@ -20,4 +22,16 @@ function playBgMusic(){
 		 audio.play();
 	  else
 		  audio.pause();
+}
+
+function setDDay(){
+	const today = new Date();
+	const dday = new Date("Jun 29,2024, 00:00:00");
+	let gap = dday - today;
+	
+	const dayGap = Math.ceil(gap / (1000*60*60*24));
+	var dDayText = dayGap + "일 남았습니다.";
+	
+	$("#calDiv").append("<h3 style='color: #aeaeae;'>" + dDayText + "</h3>");
+	
 }
