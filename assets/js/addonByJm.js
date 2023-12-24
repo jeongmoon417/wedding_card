@@ -39,12 +39,16 @@ function setDDay(){
 
 function callMapApi() {
 	
+	location.href = "http://naver.me/FgzpZyy8";
+	
+	/*
 	const userAgent = navigator.userAgent.toLowerCase(); //userAgent 문자열 값 받아오기
 
 	if (userAgent.indexOf("android") > -1) {    
 	   //안드로이드일 때 실행할 동작
 		alert('Android');
-		location.href = "intent://place?lat=37.4979502&lng=127.0276368&name=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%EC%A0%95%EC%9E%90%EB%8F%99&appname=com.example.myapp#Intent;scheme=nmap;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.nhn.android.nmap;end";
+		location.href = "http://naver.me/FgzpZyy8";
+		//location.href = "intent://place?lat=37.5050412&lng=127.0343413&name=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%84%B1%EB%82%A8%EC%8B%9C%20%EB%B6%84%EB%8B%B9%EA%B5%AC%20%EC%A0%95%EC%9E%90%EB%8F%99&appname=com.example.myapp#Intent;scheme=nmap;action=android.intent.action.VIEW;category=android.intent.category.BROWSABLE;package=com.nhn.android.nmap;end";
 	} else if (
 	  	userAgent.indexOf("iphone") > -1 ||
 	    userAgent.indexOf("ipad") > -1 || 
@@ -55,5 +59,5 @@ function callMapApi() {
 	} else {    
 	  //아이폰, 안드로이드가 아닐 때 실행할 동작
 		alert('other');
-	}
+	}*/
 }
