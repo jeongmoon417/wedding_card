@@ -15,6 +15,7 @@ $(document).ready(function(){
 	audio.play();
 	
 	setDDay();
+	
 });
 
 function playBgMusic(){

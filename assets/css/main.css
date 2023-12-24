@@ -2532,8 +2532,8 @@ input, select, textarea {
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #000000;
-		border-color: #000000;
+		background-color: #FFA8A5;
+		border-color: #FFA8A5;
 		color: #ffffff;
 	}
 
@@ -8615,6 +8615,7 @@ input, select, textarea {
 			
 /* added by jm*/
 
+/*Ä®·£´õ*/
 .calendar{
   display:inline-grid;
   justify-content:center;
