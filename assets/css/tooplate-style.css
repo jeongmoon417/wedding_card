@@ -8,13 +8,14 @@ http://www.tooplate.com/view/2086-multi-color
 body {
 	
 	/* 메인에 영향을 미치기 때문에 삭제!*/
-	
+	/*
 	background-color: #DDDDDD;
 	color: black;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 17px;
 	font-weight: 300;
 	overflow-x: hidden;
+	*/
 	
 }
 
@@ -22,7 +23,7 @@ body {
 
 
  /*메인에 영향을 주기 때문에 지운다*/
-
+/*
 ul { padding: 0; margin: 0; }
 figure { margin: 0; }
 p:last-child { margin-bottom: 0; }
@@ -33,6 +34,7 @@ a:focus {
 	text-decoration: none;
 	outline: none;
 }
+*/
 
 
 .tm-brand-icon { 
@@ -402,7 +404,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 
 /* Gallery */
 .grid-item {
-	margin-bottom: 20px;
+	margin-bottom: 5px;
 	padding-left: 1px;
 	padding-right: 1px;
 	float: left;
@@ -662,7 +664,8 @@ figure.effect-bubba:hover p {
 
 /* Media Queries */
 
-@media only screen and (min-width: 400px) {
+/* @media only screen and (min-width: 400px) { */
+@media only screen and (min-width: 180px) {
 	.cd-hero-slider h2 { font-size: 1.4em; }
 
 	/*.cd-hero-slider .selected .cd-full-width figure.effect-ruby h2.tm-figure-title {
@@ -672,19 +675,22 @@ figure.effect-bubba:hover p {
 	.grid-item figure figcaption { padding: 2em; }
 }
 
-@media only screen and (min-width: 480px) {
+/* @media only screen and (min-width: 480px) { */
+@media only screen and (min-width: 200px) {
 	.cd-full-width .container-fluid { margin-top: -80px; }
 	.cd-hero-slider h2.tm-text-title { font-size: 1.8em; }
-	.tm-textbox-padding { padding: 30px 40px; }
-	.tm-textbox-padding-contact { padding: 30px; }
+	
+	/* .tm-textbox-padding { padding: 30px 40px; }
+	.tm-textbox-padding-contact { padding: 30px; } */
+	
 	.tm-img-gallery-container { 
 		margin: 0 auto;
 		max-width: 680px; 
 	}
 
 	.grid-item {
-		padding-left: 10px;
-		padding-right: 10px;
+		padding-left: 3px;
+		padding-right: 3px;
 		width: 50%;
 	}
 

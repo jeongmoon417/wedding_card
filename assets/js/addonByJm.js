@@ -51,7 +51,7 @@ function setPhotoWwipe(){
     $('#tmNavbar a').click(function(){
         $('#tmNavbar').collapse('hide');
 
-        adjustHeightOfPage($(this).data("no")); // Adjust page height       
+       // adjustHeightOfPage($(this).data("no")); // Adjust page height       
     });
 
     /* Browser resized 
