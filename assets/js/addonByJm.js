@@ -16,6 +16,8 @@ $(document).ready(function(){
 	
 	setDDay();
 	
+	setPhotoWwipe();
+	
 });
 
 function playBgMusic(){
@@ -35,4 +37,35 @@ function setDDay(){
 	
 	$("#calDiv").append("<h3 style='color: #aeaeae;'>" + dDayText + "</h3>");
 	
+}
+
+function setPhotoWwipe(){
+	$('.gallery-one').magnificPopup({
+        delegate: 'a', // child items selector, by clicking on it popup will open
+        type: 'image',
+        gallery:{enabled:true}                
+    });
+	
+	/* Collapse menu after click 
+    -----------------------------------------*/
+    $('#tmNavbar a').click(function(){
+        $('#tmNavbar').collapse('hide');
+
+        adjustHeightOfPage($(this).data("no")); // Adjust page height       
+    });
+
+    /* Browser resized 
+    -----------------------------------------*/
+    $( window ).resize(function() {
+        var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
+        
+        // wait 3 seconds
+        setTimeout(function() {
+            adjustHeightOfPage( currentPageNo );
+        }, 1000);
+        
+    });
+
+    // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
+    $('body').addClass('loaded');
 }
