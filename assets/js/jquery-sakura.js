@@ -53,10 +53,10 @@
         var defaults = {
             blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
             className: 'sakura',
-            fallSpeed: 0.2,	// 작을수록 빨리 떨어진다
+            fallSpeed: 0.15,	// 작을수록 빨리 떨어진다
             maxSize: 14,
             minSize: 9,
-            newOn: 500,	// 클수록 많이 내린다
+            newOn: 300,	// 작을수록 많이 내린다
             swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
         };
 

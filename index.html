@@ -12,6 +12,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
+	    <link rel="stylesheet" href="assets/css/modal-container.css"> 
+		
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">                                      
 	    <!-- Bootstrap style -->
 	    <link rel="stylesheet" href="assets/css/hero-slider-style.css">                              
@@ -19,6 +21,7 @@
 	    <link rel="stylesheet" href="assets/css/magnific-popup.css">                                 
 	    <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
 	    <link rel="stylesheet" href="assets/css/tooplate-style.css"> 
+		
 		
 		
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -111,7 +114,7 @@
 					</section>
 			
 					<!-- 4. 장소 -->
-					<section class="spotlight style1 orient-right content-align-center image-position-center onscroll-image-fade-in" id="first">
+					<section class="spotlight style1 orient-right content-align-center image-position-center onscroll-image-fade-in" id="placeSection">
 						
 						<!-- 장소 : 여기 있어야 위로 올라온다.. -->
 						<div class="content inner items onscroll-fade-in">
@@ -120,23 +123,47 @@
 							
 							<!-- <img src="images/map2.jpg" alt="" style="max-width: 100%;" /> -->
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1219770774974!2d127.03176637572152!3d37.50504117205459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca34c7e5fe2cf%3A0x290654dfcd57d067!2z642U7LGE7ZSM7JWz64W87ZiE!5e0!3m2!1sko!2skr!4v1703411911544!5m2!1sko!2skr" style="width: 100%;" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-							
+							 
 							<div class="wrapper style1 align-center">
 								
-								 <ul class="icons" style="margin-top: 15px;">
+								 <ul class="icons" style="margin-top: 15px; margin-bottom: 15px;">
 									<li><a href="javascript:void(0);" class="" onclick="location.href = 'http://naver.me/FgzpZyy8';" ><img class="myImageIcon" src='images/NaverMap_logo.png'/><!-- <span class="label">네이버지도</span> --></a></li>
 									<li><a href="javascript:void(0);" class="" onclick="location.href = 'https://kko.to/sccJlA6y4u';"><img class="myImageIcon" src='images/KakaoMap_logo.png'/><!-- <span class="label">카카오지도</span> --></a></li>		
 								</ul> 
 							</div>
 							
-							<p>
-							                 간선버스 : 147 / 463
-								<br>지선버스 : 4211 
-								<br>광역버스 : 3600 / 9600
-								<br>
-								<br>지하철 역삼역 (2호선) 6번 출구
-								<br>지하철 언주역 (9호선) 7번 출구
-							</p>
+							
+							<!-- Button trigger modal -->
+							<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1"> -->
+							<button type="button" class="" data-toggle="modal" data-target="#tranModal" style="margin-bottom: 20px;">
+							 	 대중교통편
+							</button>
+							
+							<!-- Modal -->
+							<div class="modal fade" id="tranModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							  <div class="modal-dialog">
+							    <div class="modal-content">
+							      <!-- <div class="modal-header pt-reduced pb-reduced" style="">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							      	<h4 class="modal-title" id="myModalLabel">Modal title 1</h4>
+							      </div> -->
+							      <div class="modal-body">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+							        <p style="margin-top: 30px;">
+									                 간선버스 : 147 / 463
+										<br>지선버스 : 4211 
+										<br>광역버스 : 3600 / 9600
+										<br>
+										<br>지하철 역삼역 (2호선) 6번 출구
+										<br>지하철 언주역 (9호선) 7번 출구
+									</p>
+							      </div>
+							    </div>
+							  </div>
+							</div>
+							
+							
+							
 							
 						</div>
 					</section>
@@ -417,101 +444,51 @@
 	                    </div>  
                     </section>
 	                  
-				<!-- Six -->
+	                  
+					<!-- Six -->
 					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Ipsum sed consequat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
+						<div class="inner" style="padding-top: 1px;">
+							<!-- <h3>마음 전하실 곳</h3> -->
+							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+							 --><div class="items style1 medium onscroll-fade-in">
+								<section style="border-color: rgba(0, 0, 0, 0);">
+									<span class="icon solid fa-user-tie style2 major"></span>
+									<h3>신랑</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
+								<section style="border-color: rgba(0, 0, 0, 0);">
+									<span class="icon solid fa-user style2 major "></span>
+									<h3>신부</h3>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
 								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Risus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
+								
 							</div>
 						</div>
 					</section>
 
 				<!-- Seven -->
 					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-
-						</div>
+						
+				<!-- 모달 -->
+				<!-- Button trigger modal -->
+				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
+				  Player 1
+				</button>
+				
+				<!-- Modal -->
+				<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Modal title 1</h4>
+				      </div>
+				      <div class="modal-body">
+				        ...
+				      </div>
+				    </div>
+				  </div>
+				</div>
 					</section>
 
 				<!-- Footer -->

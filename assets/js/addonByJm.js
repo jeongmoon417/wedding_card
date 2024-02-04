@@ -18,6 +18,11 @@ $(document).ready(function(){
 	
 	setPhotoWwipe();
 	
+	
+	makeModal();
+	
+	
+	
 });
 
 function playBgMusic(){
@@ -60,12 +65,32 @@ function setPhotoWwipe(){
         var currentPageNo = $(".cd-hero-slider li.selected .js-tm-page-content").data("page-no");
         
         // wait 3 seconds
-        setTimeout(function() {
-            adjustHeightOfPage( currentPageNo );
-        }, 1000);
+        //setTimeout(function() {
+        //    adjustHeightOfPage( currentPageNo );
+        //}, 1000);
         
     });
 
     // Remove preloader (https://ihatetomatoes.net/create-custom-preloading-screen/)
     $('body').addClass('loaded');
+}
+
+function makeModal() {
+	/*$("div[id^='myModal']").each(function(){
+		  
+		  var currentModal = $(this);
+		  
+		  //click next
+		  currentModal.find('.btn-next').click(function(){
+		    currentModal.modal('hide');
+		    currentModal.closest("div[id^='myModal']").nextAll("div[id^='myModal']").first().modal('show'); 
+		  });
+		  
+		  //click prev
+		  currentModal.find('.btn-prev').click(function(){
+		    currentModal.modal('hide');
+		    currentModal.closest("div[id^='myModal']").prevAll("div[id^='myModal']").first().modal('show'); 
+		  });
+
+		});*/
 }
