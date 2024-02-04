@@ -8616,6 +8616,7 @@ input, select, textarea {
 /* added by jm*/
 
 /*Ä®·£´õ*/
+/*
 .calendar{
   display:inline-grid;
   justify-content:center;
@@ -8695,7 +8696,7 @@ input, select, textarea {
     }
   }
 }
-
+*/
 .myImageIcon {
 	
     width: 2.5rem;
