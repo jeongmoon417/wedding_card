@@ -8705,3 +8705,9 @@ input, select, textarea {
 	
 	
 }
+
+/*모달 센터*/
+.modal-dialog-my-center {
+    transform: translate(0, -50%) !important;
+    top: 50% !important;
+}

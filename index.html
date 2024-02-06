@@ -114,10 +114,10 @@
 					</section>
 			
 					<!-- 4. 장소 -->
-					<section class="spotlight style1 orient-right content-align-center image-position-center onscroll-image-fade-in" id="placeSection">
+					<section class="spotlight style1 orient-right content-align-center image-position-center" id="placeSection">
 						
 						<!-- 장소 : 여기 있어야 위로 올라온다.. -->
-						<div class="content inner items onscroll-fade-in">
+						<div class="content inner items">
 							<h2>오시는 길</h2>
 							<h3>서울시 강남구 논현로 549  &nbsp  5층 라메르홀</h3>
 							
@@ -136,12 +136,12 @@
 							<!-- Button trigger modal -->
 							<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1"> -->
 							<button type="button" class="" data-toggle="modal" data-target="#tranModal" style="margin-bottom: 20px;">
-							 	 대중교통편
+							 	 교통 안내
 							</button>
 							
 							<!-- Modal -->
 							<div class="modal fade" id="tranModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-							  <div class="modal-dialog">
+							  <div class="modal-dialog" style="transform: translate(0, -50%); top: 50%;">
 							    <div class="modal-content">
 							      <!-- <div class="modal-header pt-reduced pb-reduced" style="">
 							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -149,13 +149,21 @@
 							      </div> -->
 							      <div class="modal-body">
 							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							        <p style="margin-top: 30px;">
-									                 간선버스 : 147 / 463
-										<br>지선버스 : 4211 
-										<br>광역버스 : 3600 / 9600
+							        <p style="margin-top: 30px;text-align: left;margin-left: 15%;">
+							        		<span class="icon solid fa-bus" style="margin-top: 20px;margin-bottom: 20px;"></span> &nbsp 대중교통편
+									    <br> 
+									    <br>  간선버스 : <span style="color: #0064FF;"> 147번, 463번 </span>
+										<br>  지선버스 : <span style="color: #0A6E0A;"> 4211번  </span>
+										<br>  광역버스 : <span style="color: #CD1039;"> 3600번, 9600번 </span>
 										<br>
-										<br>지하철 역삼역 (2호선) 6번 출구
-										<br>지하철 언주역 (9호선) 7번 출구
+										<br> 지하철 <span style="color: #0A6E0A;"> 역삼역 (2호선)</span> 6번 출구 (도보 5분)
+										<br> 지하철 <span style="color: #CD853F;"> 언주역 (9호선)</span> 7번 출구 (도보 10분)
+										<br> 
+										<br> <span class="icon solid fa-car-side" style="margin-top: 20px;margin-bottom: 20px;"></span> &nbsp 주차 안내
+									    <br> 
+									    <br> 0시간 무료 주차
+									    <br> 교통상황이 다소 복잡할수 있습니다. 
+									    <br> 양해 부탁드립니다.
 									</p>
 							      </div>
 							    </div>
@@ -490,6 +498,52 @@
 				  </div>
 				</div>
 					</section>
+					
+					
+					
+					
+					
+					
+					
+					<!-- Button to Open the Modal -->
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Open modal
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog" style="transform: translate(0, -50%); top: 50%;">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Modal Heading</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          Modal body..
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
