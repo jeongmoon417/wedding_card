@@ -12,7 +12,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
-	    <link rel="stylesheet" href="assets/css/modal-container.css"> 
+	    <link rel="stylesheet" href="assets/css/add-on-jm.css"> 
 		
 		<link rel="stylesheet" href="assets/css/bootstrap.min.css">                                      
 	    <!-- Bootstrap style -->
@@ -36,7 +36,7 @@
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
-
+				
 				<!-- 1. 메인 페이지 -->
 					<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
@@ -47,7 +47,17 @@
 							</ul>
 						</div>
 						<div class="image" id="mainImg">
-							<img src="images/banner2.jpg" alt="" class="img-gradient"/>
+							
+							<img src="images/banner2.jpg" alt="" class="img-gradient" />
+							
+							
+							<!-- 음악 버튼 -->
+							<div class="action" onclick="actionToggle();">
+							  <!-- <span>+</span> -->
+							  <span class="icon solid fa-volume-up" style="font-size:20px;"></span>
+							  <!-- <span class="icon solid fa-volume-mute" style="font-size:20px;"></span> -->
+							</div>
+							
 						</div>
 					</section>
 
@@ -457,17 +467,77 @@
 					<section class="wrapper style1 align-center">
 						<div class="inner" >
 							<h2>마음 전하실 곳</h2>
-							<p>참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다. 너그러운 마음으로 양해부탁드립니다.</p>
-							<div class="items style1 medium onscroll-fade-in">
+							<p>참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다. 
+							<br> 너그러운 마음으로 양해부탁드립니다.</p>
+							<div class="items style1 medium onscroll-fade-in" style="margin-top: 0;">
 								<section style="border-color: rgba(0, 0, 0, 0);">
-									<span class="icon solid fa-user-tie style2 major"></span>
-									<h3>신랑</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+									<!-- <div style="font-size: 20px;margin-bottom: 15px;">
+										<span class="icon solid fa-user-tie style1">  </span>
+										<span style="font-size: 20px;">신랑측</span>
+									</div> -->
+										
+									<!--  테이블 -->
+									<div class="">
+									  <ul class="responsive-table">
+									    
+									    <li class="table-header">
+									      <div class="col header" style="font-size: 15px;">
+									      	<span class="icon solid fa-user-tie style1">  </span>
+											<span>신랑측</span>
+									      </div>
+									    </li>
+									    
+									    <li class="table-row">
+									      <div class="col col-1" data-label="Bank">농협</div>
+									      <div class="col col-2" data-label="Account">000000-00-000000</div>
+									      <div class="col col-3" data-label="name">양경환</div>
+									      <div class="col col-4" data-label="Copy">복사</div>
+									    </li>
+									    <li class="table-row">
+									      <div class="col col-1" data-label="Bank">국민</div>
+									      <div class="col col-2" data-label="Account">288001-04-282944</div>
+									      <div class="col col-3" data-label="name">박미선</div>
+									      <div class="col col-4" data-label="Copy">복사</div>
+									    </li>
+									    <li class="table-row">
+									      <div class="col col-1" data-label="Bank">국민</div>
+									      <div class="col col-2" data-label="Account">000000-00-000000</div>
+									      <div class="col col-3" data-label="name">양승호</div>
+									      <div class="col col-4" data-label="Copy">복사</div>
+									    </li>
+									  </ul>
+									</div>
 								</section>
-								<section style="border-color: rgba(0, 0, 0, 0);">
-									<span class="icon solid fa-user style2 major "></span>
-									<h3>신부</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								<section style="border-color: rgba(0, 0, 0, 0); padding-top: 0;">
+									
+									<!-- <div style="font-size: 20px;margin-bottom: 15px;">
+										<span class="icon solid fa-user style1">  </span>
+										<span style="font-size: 20px;">신부측</span>
+									</div> -->
+										
+									<!--  테이블 -->
+									<div class="">
+									  <ul class="responsive-table">
+									    <li class="table-header">
+									      <div class="col header" style="font-size: 15px;">
+									      	<span class="icon solid fa-user style1">  </span>
+											<span>신부측</span>
+									      </div>
+									    </li>
+									    <li class="table-row">
+									      <div class="col col-1" data-label="Bank">산업</div>
+									      <div class="col col-2" data-label="Account">020-9200-0586-709</div>
+									      <div class="col col-3" data-label="name">이정문</div>
+									      <div class="col col-4" data-label="Copy">복사</div>
+									    </li>
+									    <li class="table-row">
+									      <div class="col col-1" data-label="Bank">농협</div>
+									      <div class="col col-2" data-label="Account">352-20-02415783</div>
+									      <div class="col col-3" data-label="name">이동수</div>
+									      <div class="col col-4" data-label="Copy">복사</div>
+									    </li>
+									  </ul>
+									</div>
 								</section>
 								
 							</div>

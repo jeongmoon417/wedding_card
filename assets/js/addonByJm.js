@@ -94,3 +94,13 @@ function makeModal() {
 
 		});*/
 }
+
+function actionToggle() {
+	  const action = document.querySelector('.action');
+	  action.classList.toggle('active');
+	  
+	  if( audio.paused )
+			 audio.play();
+		  else
+			  audio.pause();
+	}
