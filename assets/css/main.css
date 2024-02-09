@@ -2936,7 +2936,7 @@ input, select, textarea {
 	}
 
 /* Table */
-
+/* 
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		margin: 0 0 2rem 0;
@@ -3038,7 +3038,7 @@ input, select, textarea {
 	table.uniform tbody tr:nth-child(2n + 1) {
 		background-color: transparent;
 	}
-
+ */
 /* Banner (transitions) */
 
 	.banner.onload-content-fade-up .content {
@@ -7670,7 +7670,8 @@ input, select, textarea {
 
 		.items.style1.medium > * {
 			padding: 2.1875rem 2.1875rem 0.1875rem 2.1875rem ;
-			width: 33.33333%;
+			/* width: 33.33333%; */
+			width: 50%%;
 		}
 
 			.items.style1.medium > *:nth-child(-n + 3) {
