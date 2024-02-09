@@ -93,7 +93,7 @@ table {
   border-spacing: 1;
   border-collapse: collapse;
   background: white;
-  border-radius: 6px;
+  border-radius: 15px;
   overflow: hidden;
   max-width: 800px;
   width: 100%;
@@ -249,13 +249,13 @@ html.wf-active .fir-image-figure .fig-author-figure-title {
 
 /* 플로팅 버튼 */
 .action {
-  position: fixed;
+  position: absolute;
   top: 2%;
   right: 2%;
   width: 30px;
   height: 30px;
-  background: #fff;
-  border-radius: 50%;
+  /* background: #fff; */
+  /* border-radius: 50%; */
   cursor: pointer;
   box-shadow: 0 5px 5px rgba(0,0,0,0.1);
 }
