@@ -8,7 +8,7 @@
 -->
 <html>
 	<head>
-		<title>Story by HTML5 UP</title>
+		<title>6월 29일 양경환 ♥ 이정문 결혼합니다.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
@@ -53,7 +53,7 @@
 							
 							<!-- 음악 버튼 -->
 							<button class="action" onclick="actionToggle();" style="background-color: rgba(255, 255, 255, 0.3);padding-left: 0px;padding-right: 0px;">
-							  <span class="icon solid fa-volume-up" style="font-size:15px; "></span>
+							  <span id="musicIcon" class="icon solid fa-volume-up" style="font-size:15px; "></span>
 							</button>
 							
 						</div>
@@ -127,95 +127,77 @@
 						<!-- 장소 : 여기 있어야 위로 올라온다.. -->
 						<div class="content inner items">
 							<h2>오시는 길</h2>
-							<h3>서울시 강남구 논현로 549  &nbsp  5층 라메르홀</h3>
+							<h3> 더채플앳논현 
+								<br> 서울시 강남구 논현로 549  &nbsp  5층 라메르홀
+							</h3>
 							
 							<!-- <img src="images/map2.jpg" alt="" style="max-width: 100%;" /> -->
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.1219770774974!2d127.03176637572152!3d37.50504117205459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca34c7e5fe2cf%3A0x290654dfcd57d067!2z642U7LGE7ZSM7JWz64W87ZiE!5e0!3m2!1sko!2skr!4v1703411911544!5m2!1sko!2skr" style="width: 100%;" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 							 
-							<div class="wrapper style1 align-center">
-								
-								 <ul class="icons" style="margin-top: 15px; margin-bottom: 15px;">
-									<li><a href="javascript:void(0);" class="" onclick="location.href = 'http://naver.me/FgzpZyy8';" ><img class="myImageIcon" src='images/NaverMap_logo.png'/><!-- <span class="label">네이버지도</span> --></a></li>
-									<li><a href="javascript:void(0);" class="" onclick="location.href = 'https://kko.to/sccJlA6y4u';"><img class="myImageIcon" src='images/KakaoMap_logo.png'/><!-- <span class="label">카카오지도</span> --></a></li>		
-								</ul> 
-							</div>
-							
-							
-							<!-- Button trigger modal -->
-							<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1"> -->
-							<button type="button" class="" data-toggle="modal" data-target="#tranModal" style="margin-bottom: 20px;">
-							 	 교통 안내
+							<!-- 교통 안내 모달 START -->
+							<button type="button" class="" data-toggle="modal" data-target="#tranModal" style="margin-bottom: 0; margin-top: 10px; width:70%">
+							 	 📢 &nbsp교통안내
 							</button>
+							<!-- <button type="button" class="" onclick="location.href='tel:025621121'"style="">
+								📞 &nbsp 전화걸기
+							</button> -->
 							
-							<!-- Modal -->
 							<div class="modal fade" id="tranModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 							  <div class="modal-dialog" style="transform: translate(0, -50%); top: 50%;">
 							    <div class="modal-content">
-							      <!-- <div class="modal-header pt-reduced pb-reduced" style="">
-							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							      	<h4 class="modal-title" id="myModalLabel">Modal title 1</h4>
-							      </div> -->
 							      <div class="modal-body">
-							        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-							        <p style="margin-top: 30px;text-align: left;margin-left: 15%;">
+							        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="height: 1rem;"><span aria-hidden="true">&times;</span></button>
+							        <div style="margin-top: 30px; margin-bottom:30px; text-align: left;margin-left: 15%;">
+							        	<div style="padding-bottom: 10px">
 							        		<span class="icon solid fa-bus" style="margin-top: 20px;margin-bottom: 20px;"></span> &nbsp 대중교통편
-									    <br> 
-									    <br>  간선버스 : <span style="color: #0064FF;"> 147번, 463번 </span>
-										<br>  지선버스 : <span style="color: #0A6E0A;"> 4211번  </span>
-										<br>  광역버스 : <span style="color: #CD1039;"> 3600번, 9600번 </span>
-										<br>
-										<br> 지하철 <span style="color: #0A6E0A;"> 역삼역 (2호선)</span> 6번 출구 (도보 5분)
-										<br> 지하철 <span style="color: #CD853F;"> 언주역 (9호선)</span> 7번 출구 (도보 10분)
+							        	</div>
+							        	
+							        	<div style="padding-bottom: 10px">
+										                       간선버스 : <span style="color: #0064FF;"> 147번, 463번 </span>
+											<br>  지선버스 : <span style="color: #0A6E0A;"> 4211번  </span>
+											<br>  광역버스 : <span style="color: #CD1039;"> 3600번, 9600번 </span>
+											<br>  차병원(역삼방면) 정류장 50M앞 우측 건물
+										</div>
+										
+							        	<div style="padding-bottom: 0px">
+											           지하철 <span style="color: #0A6E0A;"> 역삼역 (2호선)</span> 6번 출구 (도보 5분)
+											<br> 지하철 <span style="color: #CD853F;"> 언주역 (9호선)</span> 7번 출구 (도보 10분)
+										</div>
 										<br> 
-										<br> <span class="icon solid fa-car-side" style="margin-top: 20px;margin-bottom: 20px;"></span> &nbsp 주차 안내
-									    <br> 
-									    <br> 0시간 무료 주차
-									    <br> 교통상황이 다소 복잡할수 있습니다. 
-									    <br> 양해 부탁드립니다.
-									</p>
-							      </div>
-							    </div>
-							  </div>
+										
+							        	<div style="padding-bottom: 10px">
+										      <span class="icon solid fa-car-side" style="margin-top: 20px;margin-bottom: 20px;"></span> &nbsp 자차 이용시
+								        </div>
+								        
+								        <div style="padding-bottom: 10px">
+										     	 (동호대교 방면) 동호대교 남단에서 3호선 압구정역, 7호선 학동역을 지나 차병원 사거리에서 2호선 역삼역 방면으로 200m 직진 후 우측 건물
+								        </div>
+								        
+							        	<div style="padding-bottom: 10px">
+										          0시간 무료 주차
+								      	</div>
+								      	
+							        	<div style="padding-bottom: 0px">
+										                  교통상황이 다소 복잡할수 있습니다. 
+										    <br> 양해 부탁드립니다.
+								      	</div>
+								       </div>
+									</div>
+								  </div>
+								</div>
+							</div>
+							<!-- 교통 안내 모달 END -->
+							
+							
+							<div class="wrapper style1 align-center">
+								 <ul class="icons" style="margin-top: 15px; margin-bottom: 15px;">
+									<li><a href="javascript:void(0);" class="" onclick="location.href = 'http://naver.me/FgzpZyy8';" ><img class="myImageIcon" src='images/NaverMap_logo.png'/><!-- <span class="label">네이버지도</span> --></a></li>
+									<li><a href="javascript:void(0);" class="" onclick="location.href = 'https://kko.to/sccJlA6y4u';"><img class="myImageIcon" src='images/KakaoMap_logo.png'/><!-- <span class="label">카카오지도</span> --></a></li>		
+									<li><a href="javascript:void(0);" class="" onclick="location.href = 'tel:025621121';"><img class="myImageIcon" src='images/phone_logo.png'/><!-- <span class="label">카카오지도</span> --></a></li>		
+								</ul> 
 							</div>
 							
-							
-							
-							
-						</div>
 					</section>
-					
-					
-					
-					
-
-				<!-- Three -->
-					<!-- <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Tempus adipiscing</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight02.jpg" alt="" />
-						</div>
-					</section> -->
-
-				<!-- Four -->
-					<!-- <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Pharetra etiam nulla</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
-							<ul class="actions stacked">
-								<li><a href="#" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight03.jpg" alt="" />
-						</div>
-					</section> -->
-					
 					
 					<!--  5. 갤러리 -->
 					<section class="spotlight style1 content-align-left image-position-center">
@@ -224,12 +206,6 @@
 	                        <div data-page-no="1" data-page-type="gallery">
 	                            <div class="tm-img-gallery-container">
 	                                <div class="tm-img-gallery gallery-one">
-	                                <!-- Gallery One pop up connected with JS code below -->                                    
-	                                    <!-- <div class="tm-img-gallery-info-container">                                    
-	                                        <h2 class="tm-text-title tm-gallery-title tm-white"><span class="tm-white">Multi Color Image Gallery</span></h2>
-	                                        <p class="tm-text">This responsive HTML template includes three gallery pages. Multi color is designed by Tooplate. You may use this layout for your website.
-	                                        </p>
-	                                    </div> -->
 	                                    <span class="icon solid style1 major fa-camera" style="margin-top: 20px;margin-bottom: 20px;"></span>
 	                                    
 	                                    <!-- tn 파일은 320 * 320 으로 / 그냥파일을 800 * x 로 -->
@@ -238,9 +214,9 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="gallery/wedding-photo-tn-01.jpg" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>One</span></h2>
-	                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	                                                <a href="gallery/wedding-photo-01.jpg">View more</a>
+	                                                <!-- <h2 class="tm-figure-title">Image <span>One</span></h2>
+	                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+	                                                <a href="gallery/wedding-photo-01.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>
@@ -248,9 +224,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Two</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-02.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-02.jpg">더보기</a>
 	                                            </figcaption>
 	                                        </figure>
 	                                    </div>
@@ -258,9 +232,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Three</span></h2>
-	                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	                                                <a href="gallery/wedding-photo-03.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-03.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>
@@ -268,9 +240,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Four</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-04.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-04.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>  
@@ -278,9 +248,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Five</span></h2>
-	                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	                                                <a href="gallery/wedding-photo-05.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-05.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>
@@ -288,9 +256,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="gallery/wedding-photo-tn-06.jpg" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Six</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-06.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-06.jpg">더보기</a>
 	                                            </figcaption>
 	                                        </figure>
 	                                    </div>
@@ -298,9 +264,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Seven</span></h2>
-	                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	                                                <a href="gallery/wedding-photo-07.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-07.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>
@@ -308,9 +272,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Eight</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-08.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-08.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>   
@@ -318,9 +280,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Nine</span></h2>
-	                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	                                                <a href="gallery/wedding-photo-09.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-09.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>
@@ -328,9 +288,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="gallery/wedding-photo-tn-10.jpg" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Ten</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-10.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-10.jpg">더보기</a>
 	                                            </figcaption>
 	                                        </figure>
 	                                    </div>
@@ -338,9 +296,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Eleven</span></h2>
-	                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	                                                <a href="gallery/wedding-photo-11.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-11.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>
@@ -348,9 +304,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="gallery/wedding-photo-tn-12.jpg" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Twelve</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-12.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-12.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>
@@ -358,9 +312,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Thirteen</span></h2>
-	                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	                                                <a href="gallery/wedding-photo-13.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-13.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>
@@ -368,9 +320,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Fourteen</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-14.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-14.jpg">더보기</a>
 	                                            </figcaption>
 	                                        </figure>
 	                                    </div>
@@ -378,9 +328,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="gallery/wedding-photo-tn-15.jpg" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Fifteen</span></h2>
-	                                                <p class="tm-figure-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-	                                                <a href="gallery/wedding-photo-15.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-15.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>
@@ -388,9 +336,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Sixteen</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-16.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-16.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>    
@@ -398,9 +344,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Sixteen</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-17.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-17.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>    
@@ -408,9 +352,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Sixteen</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-18.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-18.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div> 
@@ -418,9 +360,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Sixteen</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-19.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-19.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div> 
@@ -428,9 +368,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Sixteen</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-20.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-20.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div> 
@@ -438,9 +376,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Sixteen</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-21.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-21.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div> 
@@ -448,9 +384,7 @@
 	                                        <figure class="effect-bubba">
 	                                            <img src="gallery/wedding-photo-tn-22.jpg" alt="Image" class="img-fluid tm-img">
 	                                            <figcaption>
-	                                                <h2 class="tm-figure-title">Image <span>Sixteen</span></h2>
-	                                                <p class="tm-figure-description">Maecenas purus sem, lobortis id odio in sapien.</p>
-	                                                <a href="gallery/wedding-photo-22.jpg">View more</a>
+	                                                <a href="gallery/wedding-photo-22.jpg">더보기</a>
 	                                            </figcaption>           
 	                                        </figure>
 	                                    </div>                                                                     
@@ -459,7 +393,7 @@
 	                        </div>                                                    
 	                    </div>  
                     </section>
-	                  
+                    
 	                  
 					<!-- Six -->
 					<section class="wrapper style1 align-center">
@@ -468,13 +402,9 @@
 							<p>참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다. 
 							<br> 너그러운 마음으로 양해부탁드립니다.</p>
 							
-							<div class="items style1 medium onscroll-fade-in" style="margin-top: 0px;">
-								<section style="border-color: rgba(0, 0, 0, 0);">
-									<!-- <div style="font-size: 20px;margin-bottom: 15px;">
-										<span class="icon solid fa-user-tie style1">  </span>
-										<span style="font-size: 20px;">신랑측</span>
-									</div> -->
-										
+							<div class="items style1 big onscroll-fade-in" style="margin-top: 0px;">
+								<section style="border-color: rgba(0, 0, 0, 0);padding: 0 0.2rem 1.5rem 0.2rem;">
+									
 									<!--  테이블 -->
 									
 									    <table>
@@ -489,194 +419,63 @@
 									      <tbody>
 									        <tr>
 									          <td class="col-1">농협</td>
-									          <td class="col-2">000000-00-000000</td>
+									          <td class="col-2">000000-00-000001</td>
 									          <td class="col-3">양경환</td>
-									          <td class="col-4">복사</td>
+									          <td class="col-4 account-copy-btn">복사</td>
 									        </tr>
 									        <tr>
 									          <td class="col-1">국민</td>
 									          <td class="col-2">288001-04-282944</td>
 									          <td class="col-3">박미선</td>
-									          <td class="col-4">복사</td>
+									          <td class="col-4 account-copy-btn">복사</td>
 									        </tr>
 									        <tr>
 									          <td class="col-1">국민</td>
-									          <td class="col-2">000000-00-000000</td>
+									          <td class="col-2">000000-00-000002</td>
 									          <td class="col-3">양승호</td>
-									          <td class="col-4">복사</td>
+									          <td class="col-4 account-copy-btn">복사</td>
 									        </tr>
 									      </tbody>
 									    </table>
-									
-									<!-- <div class="">
-									  <ul class="responsive-table">
-									    
-									    <li class="table-header">
-									      <div class="col header" style="font-size: 15px;">
-									      	<span class="icon solid fa-user-tie style1">  </span>
-											<span>신랑측</span>
-									      </div>
-									    </li>
-									    
-									    <li class="table-row">
-									      <div class="col col-1" data-label="Bank">농협</div>
-									      <div class="col col-2" data-label="Account">000000-00-000000</div>
-									      <div class="col col-3" data-label="name">양경환</div>
-									      <div class="col col-4" data-label="Copy">복사</div>
-									    </li>
-									    <li class="table-row">
-									      <div class="col col-1" data-label="Bank">국민</div>
-									      <div class="col col-2" data-label="Account">288001-04-282944</div>
-									      <div class="col col-3" data-label="name">박미선</div>
-									      <div class="col col-4" data-label="Copy">복사</div>
-									    </li>
-									    <li class="table-row">
-									      <div class="col col-1" data-label="Bank">국민</div>
-									      <div class="col col-2" data-label="Account">000000-00-000000</div>
-									      <div class="col col-3" data-label="name">양승호</div>
-									      <div class="col col-4" data-label="Copy">복사</div>
-									    </li>
-									  </ul>
-									</div> -->
-									
-									
 									
 								</section>
-									<section style="border-color: rgba(0, 0, 0, 0); padding-top: 0;">
-										
-										<!-- <div style="font-size: 20px;margin-bottom: 15px;">
-											<span class="icon solid fa-user style1">  </span>
-											<span style="font-size: 20px;">신부측</span>
-										</div> -->
-											
-										<!--  테이블 -->
-										<table>
-									      <thead>
-									        <tr>
-									          <th colspan="4" style="font-size: 15px;">
-										      	<span class="icon solid fa-user style1">  </span>
-												<span>신부측</span>
-									          </th>
-									          <!-- <th class="col-2">CODE</th>
-									          <th class="col-3">CODE</th>
-									          <th class="col-4">CODE</th> -->
-									        </tr>
-									      <thead> 
-									      <tbody>
-									        <tr>
-									          <td class="col-1">산업</td>
-									          <td class="col-2">020-9200-0586-709</td>
-									          <td class="col-3">이정문</td>
-									          <td class="col-4">복사</td>
-									        </tr>
-									        <tr>
-									          <td class="col-1">농협</td>
-									          <td class="col-2">352-20-02415783</td>
-									          <td class="col-3">이동수</td>
-									          <td class="col-4">복사</td>
-									        </tr>
-									        <tr>
-									      </tbody>
-									    </table>
-									    
-										<!-- <div class="">
-										  <ul class="responsive-table">
-										    <li class="table-header">
-										      <div class="col header" style="font-size: 15px;">
-										      	<span class="icon solid fa-user style1">  </span>
-												<span>신부측</span>
-										      </div>
-										    </li>
-										    <li class="table-row">
-										      <div class="col col-1" data-label="Bank">산업</div>
-										      <div class="col col-2" data-label="Account">020-9200-0586-709</div>
-										      <div class="col col-3" data-label="name">이정문</div>
-										      <div class="col col-4" data-label="Copy">복사</div>
-										    </li>
-										    <li class="table-row">
-										      <div class="col col-1" data-label="Bank">농협</div>
-										      <div class="col col-2" data-label="Account">352-20-02415783</div>
-										      <div class="col col-3" data-label="name">이동수</div>
-										      <div class="col col-4" data-label="Copy">복사</div>
-										    </li>
-										  </ul>
-										</div> -->
-									</section>
+								<section style="border-color: rgba(0, 0, 0, 0);padding: 0 0.2rem 1.5rem 0.2rem;">
+									
+									<!--  테이블 -->
+									<table>
+								      <thead>
+								        <tr>
+								          <th colspan="4" style="font-size: 15px;">
+									      	<span class="icon solid fa-user style1">  </span>
+											<span>신부측</span>
+								          </th>
+								          <!-- <th class="col-2">CODE</th>
+								          <th class="col-3">CODE</th>
+								          <th class="col-4">CODE</th> -->
+								        </tr>
+								      <thead> 
+								      <tbody>
+								        <tr>
+								          <td class="col-1">산업</td>
+								          <td class="col-2">020-9200-0586-709</td>
+								          <td class="col-3">이정문</td>
+								          <td class="col-4 account-copy-btn">복사</td>
+								        </tr>
+								        <tr>
+								          <td class="col-1">농협</td>
+								          <td class="col-2">352-20-02415783</td>
+								          <td class="col-3">이동수</td>
+								          <td class="col-4 account-copy-btn">복사</td>
+								        </tr>
+								        <tr>
+								      </tbody>
+								    </table>
+								    
+								</section>
 								</div>
 								
 							</div>
 					</section>
-
-				<!-- Seven -->
-					<section class="wrapper style1 align-center">
-						
-				<!-- 모달 -->
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
-				  Player 1
-				</button>
-				
-				<!-- Modal -->
-				<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				  <div class="modal-dialog">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				        <h4 class="modal-title" id="myModalLabel">Modal title 1</h4>
-				      </div>
-				      <div class="modal-body">
-				        ...
-				      </div>
-				    </div>
-				  </div>
-				</div>
-					</section>
-					
-					
-					
-					
-					
-					
-					
-					<!-- Button to Open the Modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-    Open modal
-  </button>
-
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal">
-    <div class="modal-dialog" style="transform: translate(0, -50%); top: 50%;">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-          Modal body..
-        </div>
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-					
-					
-					
-					
-					
-					
-					
-					
-					
-					
 
 				<!-- Footer -->
 					<footer class="wrapper style1 align-center">
@@ -686,9 +485,9 @@
 								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
 								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon style2 fa-envelope" onclick="playBgMusic();"><span class="label">Email</span></a></li>
+								<li><a href="javascript:void(0);" class="icon style2 fa-envelope" id="kakaotalk-sharing-btn"><span class="label">Email</span></a></li>
 							</ul>
-							<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+							<p>&copy; 2024 이정문, 양경환</a>.</p>
 						</div>
 					</footer>
 
@@ -707,9 +506,13 @@
 			
 			<!-- <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> --> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) --> 
 	        
+	        <script src="assets/js/tether.min.js"></script>             <!-- tether : www.atlasestateagents.co.uk/javascript/tether.min.js  -->
 	        <script src="assets/js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
+	        
 	        <script src="assets/js/hero-slider-main.js"></script>          <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
 	        <script src="assets/js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
+	        
+	        <script src="assets/js/kakao.min.js"></script> <!-- 카카오 -->
 			
 			<script src="assets/js/addonByJm.js"></script>
 			

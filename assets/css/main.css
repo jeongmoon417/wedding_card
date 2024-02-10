@@ -7670,8 +7670,8 @@ input, select, textarea {
 
 		.items.style1.medium > * {
 			padding: 2.1875rem 2.1875rem 0.1875rem 2.1875rem ;
-			/* width: 33.33333%; */
-			width: 50%%;
+			width: 33.33333%;
+			/* width: 50%; */
 		}
 
 			.items.style1.medium > *:nth-child(-n + 3) {

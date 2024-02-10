@@ -271,7 +271,7 @@ html.wf-active .fir-image-figure .fig-author-figure-title {
   transition: .3s ease-in-out;
 }
 .action.active span  {
-  transform: rotate(135deg);
+  transform: rotate(360deg);
 }
 
 .action ul {
