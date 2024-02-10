@@ -7722,6 +7722,13 @@ input, select, textarea {
 
 		@media screen and (max-width: 980px) {
 
+			/*이정문 추가*/
+			.items.style1.big > * {
+				padding: 2.625rem 2.625rem 0.625rem 2.625rem ;
+				width: 100%;
+			}
+			/*이정문 추가*/
+	
 			.items.style1.medium > *:nth-child(-n + 3) {
 				border-top-width: 1px;
 			}

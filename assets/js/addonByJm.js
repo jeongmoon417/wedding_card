@@ -111,6 +111,33 @@ function setBgmIcon(){
 	  }
 }
 
+/**
+ * 카카도 지도 초기화
+ */
+/*function initMap() {
+	var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+	    mapOption = { 
+	        center: new kakao.maps.LatLng(37.5050412, 127.0343413), // 지도의 중심좌표
+	        level: 3 // 지도의 확대 레벨
+	    };
+	
+	var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+	
+	// 마커가 표시될 위치입니다 
+	var markerPosition  = new kakao.maps.LatLng(37.5050412, 127.0343413); 
+	
+	// 마커를 생성합니다
+	var marker = new kakao.maps.Marker({
+	    position: markerPosition
+	});
+	
+	// 마커가 지도 위에 표시되도록 설정합니다
+	marker.setMap(map);
+	
+	// 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+	// marker.setMap(null);    
+}*/
+
 
 accountCopyBtn.forEach((e, index) => {
 	e.addEventListener('click', () => {
@@ -141,10 +168,10 @@ accountCopyBtn.forEach((e, index) => {
   });
 });
 
-/*shareLinkCopy.addEventListener('click', () => {
+shareLinkCopy.addEventListener('click', () => {
   window.navigator.clipboard.writeText(document.location.href).then(
     () => {
-      alert('주소 복사 완료!');
+      alert('주소가 클립보드에 복사되었습니다.');
     },
     () => {
       try {
@@ -154,7 +181,7 @@ accountCopyBtn.forEach((e, index) => {
         document.body.appendChild(tempShareLink);
         tempShareLink.select();
         document.execCommand("copy");
-        alert('주소 복사 완료!');
+        alert('주소가 클립보드에 복사되었습니다.');
       } catch(err) {
         alert(`주소 복사 실패 (${err})! 아래 연락처로 문의 부탁드립니다!`);
       }
@@ -166,19 +193,12 @@ accountCopyBtn.forEach((e, index) => {
 
 Kakao.init('199d271581eb40b8d632a008fdd8fe11');
 
-Kakao.Share.createCustomButton({
-  container: '#kakaotalk-sharing-btn',
-  templateId: 97955,
-});*/
-
-Kakao.init('199d271581eb40b8d632a008fdd8fe11');
-
 Kakao.Share.createDefaultButton({
 		container: '#kakaotalk-sharing-btn',
 		objectType: 'feed',
 		content: {
 		    title: '양경환 ♥ 이정문 결혼합니다.',
-		    description: '6월 29일 (토) 12시 30분 \n 더채플앳논현 5층 라메르홀',
+		    description: '6월 29일 (토) 12시 30분 \n더채플앳논현 5층 라메르홀',
 		    imageUrl:
 		      'https://jeongmoon417.github.io/wedding_card/images/banner2.jpg',
 		    link: {
@@ -196,3 +216,9 @@ Kakao.Share.createDefaultButton({
       }
     ],
 });
+
+
+
+
+
+
