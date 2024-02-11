@@ -112,6 +112,32 @@ function setBgmIcon(){
 }
 
 /**
+ * 식장 주소 복사
+ */
+function copyAddress() {
+	window.navigator.clipboard.writeText(document.getElementById('venueAddress').textContent).then(
+		    () => {
+		      alert('주소가 클립보드에 복사되었습니다.');
+		    },
+		    () => {
+		      try {
+		        const tempShareLink = document.createElement("textarea");
+		        tempShareLink.value = document.getElementById('venueAddress').textContent;
+		        tempShareLink.style.cssText = "position:absolute;left:-9999px;top:-9999px";
+		        document.body.appendChild(tempShareLink);
+		        tempShareLink.select();
+		        document.execCommand("copy");
+		        alert('주소가 클립보드에 복사되었습니다.');
+		      } catch(err) {
+		        alert(`주소 복사 실패 (${err})! 아래 연락처로 문의 부탁드립니다!`);
+		      }
+
+		      document.body.removeChild(tempShareLink);
+		    }
+		  );
+}
+
+/**
  * 카카도 지도 초기화
  */
 /*function initMap() {
