@@ -141,6 +141,18 @@ table td.col-4, table th.col-4 {
   width: 15%;
 }
 
+table td.col-11, table th.col-11 {
+  text-align: left;
+  width: 40%;
+}
+table td.col-12, table th.col-12 {
+  text-align: left;
+  width: 47%;
+}
+table td.col-13, table th.col-13 {
+  text-align: center;
+  width: 13%;
+}
 
 @media screen and (max-width: 200px) {
   table {
