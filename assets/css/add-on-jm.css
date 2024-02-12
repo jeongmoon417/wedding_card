@@ -143,15 +143,15 @@ table td.col-4, table th.col-4 {
 
 table td.col-11, table th.col-11 {
   text-align: left;
-  width: 40%;
+  width: 35%;
 }
 table td.col-12, table th.col-12 {
   text-align: left;
-  width: 47%;
+  width: 53%;
 }
 table td.col-13, table th.col-13 {
   text-align: center;
-  width: 13%;
+  width: 12%;
 }
 
 @media screen and (max-width: 200px) {
