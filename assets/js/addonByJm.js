@@ -11,9 +11,6 @@ audio.autoplay = true;
 
 $(document).ready(function(){
 	
-	// 꽃잎 내리는 효과
-	$('#mainImg').sakura();
-	
 	//alert('hi');
 	audio.play();
 	setBgmIcon();
@@ -23,7 +20,9 @@ $(document).ready(function(){
 	
 	//갤러리 초기화
 	setPhotoWwipe();
-	
+
+	// 꽃잎 내리는 효과
+	$('#mainImg').sakura();
 	
 	
 });
