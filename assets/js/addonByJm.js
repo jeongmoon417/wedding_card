@@ -6,7 +6,7 @@
 const accountCopyBtn = document.querySelectorAll('.account-copy-btn');
 const shareLinkCopy = document.getElementById('share-link-copy');
 
-const audio = new Audio('audio/song1.mp3');		//audio가 load 될 때 자동재생 됨
+const audio = new Audio('audio/song2.mp3');		//audio가 load 될 때 자동재생 됨
 audio.autoplay = true;
 
 $(document).ready(function(){

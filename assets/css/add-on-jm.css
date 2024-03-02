@@ -132,6 +132,7 @@ table td.col-1, table th.col-1 {
 table td.col-2, table th.col-2 {
   text-align: left;
   width: 50%;
+  text-decoration: underline;
 }
 table td.col-3, table th.col-3 {
   text-align: center;
