@@ -8706,6 +8706,15 @@ input, select, textarea {
   }
 }
 */
+
+.today {
+	/*  background-image: url(../../images/hart_img.JPG); 
+        background-size: cover;
+         */
+     border-radius : 100px;
+		background : #FFA8A5;
+	}
+
 .myImageIcon {
 	
     width: 2.5rem;
