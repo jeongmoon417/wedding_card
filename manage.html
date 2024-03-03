@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	
+	C:\Users\USER\git\wedding_card\manage.html
+-->
+<html>
+	<head>
+		<title>경환 ♥ 정문 모바일 청첩장 관리차 페이지</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="shortcut icon" href="#">
+		
+	    <link rel="stylesheet" href="assets/css/add-on-jm.css"> 
+	    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css"> 
+		
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">                                      
+	    <!-- Bootstrap style -->
+	    <link rel="stylesheet" href="assets/css/hero-slider-style.css">                              
+	    <!-- Hero slider style (https://codyhouse.co/gem/hero-slider/) -->
+	    
+	    <link rel="stylesheet" href="assets/css/magnific-popup.css">                                 
+	    <!-- Magnific popup style (http://dimsemenov.com/plugins/magnific-popup/) -->
+	    <link rel="stylesheet" href="assets/css/tooplate-style.css"> 
+		
+		
+		
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/jquery-sakura.css" />
+		
+		     
+	                  
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" />
+		</noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+				
+				<!-- 1. 메인 페이지 -->
+					<section class="banner style1 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h2>경환 ♥ 정문</h2>
+							<h3 style="margin-bottom: 2rem;">관리자 페이지</h3>
+							<!-- <ul class="actions stacked">
+								<li><a href="#invitingLetter" class="button big wide smooth-scroll-middle">모시는글</a></li>
+							</ul> -->
+						</div>
+						
+						<div class="image" id="mainImg">
+							
+							<img src="images/banner3.jpg" alt="" class="img-gradient" />
+							
+							
+							<!-- 음악 버튼 -->
+							<button class="action" onclick="actionToggle();" style="background-color: rgba(255, 255, 255, 1);padding-left: 0px;padding-right: 0px;">
+							  <span id="musicIcon" class="icon solid fa-wrench" style="font-size:15px; "></span>
+							</button>
+							
+						</div>
+					</section>
+					
+					<!-- 공유하기 -->
+					<section class="wrapper style1 align-center">
+						<div class="inner medium">
+							<h2>청첩장 공유하기</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">제목</label>
+										<input type="text" name="shareTitle" id="shareTitle" value="" />
+									</div>
+									<!-- <div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" value="" />
+									</div> -->
+									<div class="field">
+										<label for="shareMessage">메세지</label>
+										<textarea name="shareMessage" id="shareMessage" rows="6"></textarea>
+									</div>
+									
+									<div class="field half">
+										<input type="radio" id="cardType1" name="cardType" value="index.html" checked />
+										<label for="cardType1">원본</label>
+									</div>
+									<div class="field third">
+										<input type="radio" id="cardType2" name="cardType" value="lightCard.html" />
+										<label for="cardType2">간단히</label>
+									</div>
+								</div>
+							</form>
+							
+							<a href="javascript:void(0);" id="kakaotalk-sharing-btn" class="button fit">카카오톡 공유</a>
+							
+							
+
+						</div>
+					</section>	
+
+
+				
+			
+			<!--3. 시간 -->
+				<section class="spotlight style1 orient-right content-align-center image-position-center onscroll-image-fade-in">
+					
+					<div class="content">
+						<div class="calendar onscroll-fade-in" id="calDiv">
+							<div class="month">
+								<h2 style="margin-bottom: 10px;"><b style="color: #FFA8A5;">6월 29일</b></h2>
+								<h3>토요일 오후 12시 30분</h3>
+							</div>
+
+							<div>
+								<hr style="margin: 0;">
+							</div>
+							
+							<table class="Tablecalendar">
+								<tbody>
+									<tr class="ClaendarRow ClaendarHeader">
+										<td>일</td>	<td >월</td><td >화</td><td >수</td><td >목</td><td >금</td><td >토</td>
+									</tr>
+									<tr class="ClaendarRow">
+										<td></td> <td></td> <td></td> <td></td> <td></td> <td></td> <td>1</td>
+									</tr>
+									<tr class="ClaendarRow">
+										<td>2</td> <td>3</td> <td>4</td> <td>5</td> <td>6</td> <td>7</td> <td>8</td>
+									</tr>
+									<tr class="ClaendarRow">
+										<td>9</td> <td>10</td> <td>11</td> <td>12</td> <td>13</td> <td>14</td> <td>15</td>
+									</tr>
+									<tr class="ClaendarRow">
+										<td>16</td> <td>17</td> <td>18</td> <td>19</td> <td>20</td> <td>21</td> <td>22</td>
+									</tr>
+									<tr class="ClaendarRow">
+										<td>23</td> <td>24</td> <td>25</td> <td>26</td> <td>27</td> <td>28</td> <td class="today"><b style="color: #ffffff;">29</b></td>
+									</tr>
+									<tr class="ClaendarRow">
+										<td>30</td> <td></td> <td></td> <td></td> <td></td> <td></td> <td></td>
+									</tr>
+								</tbody>
+							</table>
+							
+							<div>
+								<hr style="margin-top: 0; margin-bottom:15px;">
+							</div>
+						</div>
+					</div>
+				</section>
+			
+			
+		<section class="wrapper style1 align-center">
+				</section>	
+					<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner" style="padding-top: 10px;">		
+							<ul class="actions fit">
+									<li> <a href="javascript:void(0);" class="button icon solid fa-copy fit" id="share-link-copy">주소복사</a></li>
+									<li> <a href="javascript:void(0);" class="button icon solid fa-copy fit" id="myTest">테스트</a> </li>
+									<!-- <li><a href="javascript:void(0);" class="button icon solid fa-copy fit" id="share-link-copy">주소복사</a></li> -->
+									<!-- <li><a href="javascript:void(0);" class="button icon solid fa-comment fit" id="kakaotalk-sharing-btn">카카오톡</a></li> -->
+								</ul>
+							<p style="margin-bottom: 0.5rem;">&copy; 2024 이정문, 양경환</a>.</p>
+							<p style="margin-bottom: 0.5rem;"><a href="./index.html">👉 청첩장</a>.</p>
+							<p><a href="./lightCard.html">👉 청첩장(간단)</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery-1.11.3.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+			
+			<!-- <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> --> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) --> 
+	        
+	        <script src="assets/js/tether.min.js"></script>             <!-- tether : www.atlasestateagents.co.uk/javascript/tether.min.js  -->
+	        <script src="assets/js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
+	        
+	        <script src="assets/js/hero-slider-main.js"></script>          <!-- Hero slider (https://codyhouse.co/gem/hero-slider/) -->
+	        <script src="assets/js/jquery.magnific-popup.min.js"></script> <!-- Magnific popup (http://dimsemenov.com/plugins/magnific-popup/) -->
+	        
+	        <script src="assets/js/kakao.min.js"></script> <!-- 카카오  -->
+			
+			<script src="assets/js/managePage.js"></script>
+			
+
+	</body>
+</html>
