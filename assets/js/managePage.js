@@ -93,6 +93,7 @@ function shareKakao() {
         	MASSAGE: $('#shareMessage').val(),
         	PATH: 'wedding_card/' + $('input[name="cardType"]:checked').val(),
         	IMG : 'https://jeongmoon417.github.io/wedding_card/images/banner' + ($('input[name="cardType"]:checked').val()=="index.html" ? '' : '2') + '.jpg',
+        	REGI_WEB_DOMAIN : 'https://jeongmoon417.github.io/wedding_card/' + $('input[name="cardType"]:checked').val(),
         },   
     });
 }
