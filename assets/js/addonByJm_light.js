@@ -225,7 +225,7 @@ Kakao.Share.createDefaultButton({
 		    title: '양경환 ♥ 이정문 결혼합니다.',
 		    description: '6월 29일 (토) 12시 30분 \n더채플앳논현 5층 라메르홀',
 		    imageUrl:
-		      'https://jeongmoon417.github.io/wedding_card/images/banner.jpg',
+		      'https://jeongmoon417.github.io/wedding_card/images/banner2.jpg',
 		    link: {
 		      mobileWebUrl: 'https://jeongmoon417.github.io/wedding_card/lightCard.html',
 		      webUrl: 'https://jeongmoon417.github.io/wedding_card/lightCard.html',
