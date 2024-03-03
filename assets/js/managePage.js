@@ -82,6 +82,22 @@ function setPhotoWwipe(){
     $('body').addClass('loaded');
 }
 
+function shareKakao() {
+	
+	//alert('hi');
+	
+	Kakao.Share.sendCustom({
+        templateId: 104956,
+        templateArgs: {
+        	TITLE: $('#shareTitle').val(),
+        	MASSAGE: $('#shareMessage').val(),
+        	PATH: 'wedding_card/' + $('input[name="cardType"]:checked').val(),
+        	IMG : 'https://jeongmoon417.github.io/wedding_card/images/banner' + ($('input[name="cardType"]:checked').val()=="index.html" ? '' : '2') + '.jpg',
+        },   
+    });
+}
+
+
 accountCopyBtn.forEach((e, index) => {
 	e.addEventListener('click', () => {
     window.navigator.clipboard.writeText(
@@ -159,6 +175,7 @@ Kakao.Share.createDefaultButton({
       }
     ],
 });
+
 
 
 
